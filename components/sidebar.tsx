@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { HomeIcon, InboxIcon, SettingsIcon } from "lucide-react";
 
-import Logo from "@/public/logo_mintur_white.svg";
+import Logo from "@/public/logo_mintur_red.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "@/components/theme-toggle";
@@ -12,7 +12,7 @@ export function Sidebar({ className }: { className?: string }) {
     <div className={cn("pb-12  min-w-[200px] bg-primary-900 sticky top-0", className)}>
       <div className="flex flex-col items-start px-3 py-2">
         <div className="flex items-center justify-between mb-12 gap-8">
-          <div className="h-12 w-32 relative ">
+          <div className="h-12 w-32 relative">
             <Image src={Logo} alt="Logo" fill />
           </div>
           <ModeToggle />
